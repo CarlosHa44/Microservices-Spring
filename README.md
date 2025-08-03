@@ -17,10 +17,10 @@ Este proyecto consiste en un sistema de e-commerce compuesto por microservicios 
 Esperar algun tiempo en que se levante todo
 
 
-###Acceso a la aplicación
+### Acceso a la aplicación
 
 Al levantar la aplicación, se podrá evidenciar su funcionalidad a través de las siguientes rutas:
-    Frontend: http://localhost:8085
-    API Productos: http://localhost:8081/api/products
-    API Categorías: http://localhost:8082/api/categories
+- Frontend: http://localhost:8085
+- API Productos: http://localhost:8081/api/products
+- API Categorías: http://localhost:8082/api/categories
 
