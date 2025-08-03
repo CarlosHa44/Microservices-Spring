@@ -14,7 +14,7 @@ services:
       - test-network
 
   c-api-categories:
-    image: api-categories:v4
+    image: carlosha176/webservices:api-categories
     container_name: c-api-categories
     restart: always
     environment:
@@ -25,7 +25,7 @@ services:
       - test-network
 
   c-api-products:
-    image: api-products:v4
+    image: carlosha176/webservices:api-products
     container_name: c-api-products
     restart: always
     environment:
@@ -36,7 +36,7 @@ services:
       - test-network
 
   c-front-api:
-    image: front-api:v1
+    image: carlosha176/webservices:front-api
     container_name: c-front-api
     restart: always
     ports:
