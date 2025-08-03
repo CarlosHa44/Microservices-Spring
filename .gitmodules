@@ -1,0 +1,9 @@
+[submodule "FrontEnd"]
+	path = FrontEnd
+	url = https://github.com/CarlosHa44/FrontEnd-for-API.git
+[submodule "Backend/categories"]
+	path = Backend/categories
+	url = https://github.com/CarlosHa44/CategoryService.git
+[submodule "Backend/products"]
+	path = Backend/products
+	url = https://github.com/CarlosHa44/ProductsMicroservice.git

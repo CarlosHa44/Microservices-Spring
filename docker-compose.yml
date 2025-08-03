@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  test-db:
+    image: mysql:latest
+    container_name: test-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_DATABASE: test
+    ports:
+      - "3607:3306"
+    networks:
+      - test-network
+
+  c-api-categories:
+    image: api-categories:v4
+    container_name: c-api-categories
+    restart: always
+    environment:
+      - PORT=8004
+    ports:
+      - "8082:8004"
+    networks:
+      - test-network
+
+  c-api-products:
+    image: api-products:v4
+    container_name: c-api-products
+    restart: always
+    environment:
+      - PORT=8003
+    ports:
+      - "8081:8003"
+    networks:
+      - test-network
+
+  c-front-api:
+    image: front-api:v1
+    container_name: c-front-api
+    restart: always
+    ports:
+      - "8085:80"
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
